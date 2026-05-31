@@ -8,6 +8,10 @@
 - 公司资料和产品目录：`D:\website\js\site-data.js`
 - 页面样式：`D:\website\css\styles.css`
 - 首页横幅图片：`D:\website\assets\hero-marine-valves.png`
+- 公司图形标：`D:\website\assets\logo-jiyuan-mark.svg`
+- 公司横版标：`D:\website\assets\logo-jiyuan-horizontal.svg`
+- 深色背景横版标：`D:\website\assets\logo-jiyuan-horizontal-light.svg`
+- 公司标预览：`D:\website\logo-preview.html`
 
 ## 修改公司信息
 
@@ -15,9 +19,9 @@
 
 ```js
 name: "泰州市吉远船用附件有限公司",
-contactPerson: "曹爱珍",
+contactPerson: "王俊",
 address: "泰州市海陵区苏陈镇西石羊村十三组",
-phones: ["15161012926", "13914400275"]
+phones: ["13914400275"]
 ```
 
 保存后刷新 `index.html` 即可看到变化。

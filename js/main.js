@@ -39,13 +39,10 @@
     setText("[data-year]", String(new Date().getFullYear()));
 
     const phoneOne = company.phones && company.phones[0] ? company.phones[0] : "";
-    const phoneTwo = company.phones && company.phones[1] ? company.phones[1] : "";
     setText("[data-primary-phone]", phoneOne);
     setText("[data-phone-one]", phoneOne);
-    setText("[data-phone-two]", phoneTwo);
     setHref("[data-primary-phone-link]", `tel:${phoneOne}`);
     setHref("[data-phone-one-link]", `tel:${phoneOne}`);
-    setHref("[data-phone-two-link]", `tel:${phoneTwo}`);
     setHref("[data-floating-phone]", `tel:${phoneOne}`);
     const floatingStrong = $("[data-floating-phone] strong");
     if (floatingStrong) floatingStrong.textContent = phoneOne;

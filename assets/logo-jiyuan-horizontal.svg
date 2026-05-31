@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" role="img" aria-labelledby="title desc">
+  <title id="title">泰州市吉远船用附件有限公司横版标志</title>
+  <desc id="desc">左侧为船用阀门法兰、海浪和 JY 字母标志，右侧为公司中文名称和英文行业描述</desc>
+  <defs>
+    <linearGradient id="markBlue" x1="44" y1="40" x2="256" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#073b63"/>
+      <stop offset="0.55" stop-color="#0c6aa6"/>
+      <stop offset="1" stop-color="#0b91b9"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="150" cy="150" r="108" fill="#ffffff"/>
+    <circle cx="150" cy="150" r="108" fill="none" stroke="url(#markBlue)" stroke-width="20"/>
+    <circle cx="150" cy="150" r="72" fill="none" stroke="#d9e7ee" stroke-width="10"/>
+    <g fill="#073b63">
+      <circle cx="150" cy="43" r="8"/>
+      <circle cx="226" cy="74" r="8"/>
+      <circle cx="257" cy="150" r="8"/>
+      <circle cx="226" cy="226" r="8"/>
+      <circle cx="150" cy="257" r="8"/>
+      <circle cx="74" cy="226" r="8"/>
+      <circle cx="43" cy="150" r="8"/>
+      <circle cx="74" cy="74" r="8"/>
+    </g>
+    <path
+      d="M77 166c20-17 40-17 60 0 19 16 38 16 58 0 10-9 20-13 30-14 6 0 10 4 10 10v10c0 5-3 9-8 9-8 1-16 6-25 13-24 20-50 20-74 0-17-14-33-14-50 0-6 5-15 1-15-8v-8c0-5 2-9 6-12z"
+      fill="#0b91b9"
+    />
+    <text x="93" y="145" fill="#073b63" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-3">JY</text>
+    <rect x="93" y="82" width="33" height="12" fill="#e9b949"/>
+  </g>
+  <g>
+    <text x="320" y="128" fill="#073b63" font-family="'Microsoft YaHei', 'Noto Sans SC', Arial, sans-serif" font-size="52" font-weight="800">泰州市吉远船用附件有限公司</text>
+    <rect x="323" y="157" width="92" height="6" fill="#e9b949"/>
+    <text x="320" y="207" fill="#526b7d" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="2">MARINE ACCESSORIES · VALVES · MACHINERY</text>
+  </g>
+</svg>

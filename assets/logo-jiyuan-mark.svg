@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">泰州市吉远船用附件有限公司标志</title>
+  <desc id="desc">由船用阀门法兰、海浪和 JY 字母组成的蓝色企业标志</desc>
+  <defs>
+    <linearGradient id="markBlue" x1="92" y1="90" x2="420" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#073b63"/>
+      <stop offset="0.55" stop-color="#0c6aa6"/>
+      <stop offset="1" stop-color="#0b91b9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="190" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#markBlue)" stroke-width="34"/>
+  <circle cx="256" cy="256" r="128" fill="none" stroke="#d9e7ee" stroke-width="18"/>
+  <g fill="#073b63">
+    <circle cx="256" cy="69" r="15"/>
+    <circle cx="389" cy="123" r="15"/>
+    <circle cx="443" cy="256" r="15"/>
+    <circle cx="389" cy="389" r="15"/>
+    <circle cx="256" cy="443" r="15"/>
+    <circle cx="123" cy="389" r="15"/>
+    <circle cx="69" cy="256" r="15"/>
+    <circle cx="123" cy="123" r="15"/>
+  </g>
+  <path
+    d="M128 284c35-30 70-30 105 0 33 28 67 28 101 0 18-15 35-23 52-24 10-1 18 7 18 17v18c0 8-6 15-14 16-14 2-28 10-43 23-41 34-86 34-128 0-29-24-57-24-86 0-11 9-27 1-27-14v-14c0-9 4-17 12-22z"
+    fill="#0b91b9"
+  />
+  <path
+    d="M164 178h58v117c0 48-29 76-76 76-17 0-34-4-50-12l15-43c10 5 20 8 30 8 15 0 23-10 23-30V178z"
+    fill="#073b63"
+  />
+  <path
+    d="M239 178h63l42 68 43-68h61l-77 116v76h-57v-76l-75-116z"
+    fill="#073b63"
+  />
+  <path d="M164 178h58v30h-58z" fill="#e9b949"/>
+</svg>

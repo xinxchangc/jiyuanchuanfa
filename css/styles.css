@@ -100,16 +100,11 @@ img {
   min-width: 240px;
 }
 
-.brand-mark {
+.brand-logo {
   width: 44px;
   height: 44px;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(135deg, var(--navy), var(--cyan));
-  border-radius: var(--radius);
-  font-weight: 800;
-  letter-spacing: 0;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .brand-text {
