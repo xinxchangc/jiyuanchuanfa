@@ -44,6 +44,7 @@
     setHref("[data-primary-phone-link]", `tel:${phoneOne}`);
     setHref("[data-phone-one-link]", `tel:${phoneOne}`);
     setHref("[data-floating-phone]", `tel:${phoneOne}`);
+    $("[data-floating-phone]")?.setAttribute("aria-label", `拨打联系电话 ${phoneOne}`);
     const floatingStrong = $("[data-floating-phone] strong");
     if (floatingStrong) floatingStrong.textContent = phoneOne;
   }
