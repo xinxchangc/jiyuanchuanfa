@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="泰州市吉远船用附件有限公司详细产品目录概览，包含船用阀门、蝶阀、阀组、船用滤器及船用附件。"
+    />
+    <title>详细产品目录概览 - 泰州市吉远船用附件有限公司</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-jiyuan-mark.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="主导航">
+        <a class="brand" href="index.html#home" aria-label="返回首页">
+          <img class="brand-logo" src="assets/logo-jiyuan-mark.svg" alt="吉远船阀标志" />
+          <span class="brand-text">
+            <strong data-site-short-name>吉远船阀</strong>
+            <small>Marine Accessories</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#products">返回产品目录</a>
+          <a href="assets/jiyuan-product-catalog.pdf" target="_blank" rel="noopener">打开产品册 PDF</a>
+          <a href="index.html#contact">联系我们</a>
+        </div>
+        <a class="header-call" href="tel:13914400275" data-primary-phone-link>
+          <span>电话咨询</span>
+          <strong data-primary-phone>13914400275</strong>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section overview-section">
+        <div class="section-heading wide">
+          <div>
+            <p class="eyebrow">Catalog</p>
+            <h1>详细产品目录概览</h1>
+          </div>
+          <a class="button button-secondary" href="index.html#products">返回单品展示</a>
+        </div>
+
+        <div class="catalog-tools" aria-label="目录筛选">
+          <div class="search-wrap">
+            <label class="sr-only" for="overview-search">搜索目录</label>
+            <input id="overview-search" type="search" placeholder="搜索产品、用途或分类" data-overview-search />
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="产品分类" data-product-filters></div>
+        </div>
+        <div class="product-toolbar">
+          <p data-product-result-count>正在加载目录...</p>
+          <button class="text-button" type="button" data-clear-product-search>清空筛选</button>
+        </div>
+
+        <div class="catalog-table-wrap">
+          <table class="catalog-table">
+            <caption>
+              产品目录明细
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">产品类别</th>
+                <th scope="col">产品名称</th>
+                <th scope="col">适用场景</th>
+                <th scope="col">服务方式</th>
+              </tr>
+            </thead>
+            <tbody data-product-table></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-call" href="tel:13914400275" aria-label="拨打联系电话 13914400275" data-floating-phone>
+      <span>联系电话</span>
+      <strong>13914400275</strong>
+    </a>
+
+    <script src="js/site-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

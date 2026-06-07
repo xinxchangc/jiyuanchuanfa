@@ -7,10 +7,13 @@
 - 首页：`D:\website\index.html`
 - 公司资料和产品目录：`D:\website\js\site-data.js`
 - 页面样式：`D:\website\css\styles.css`
-- 首页横幅图片：`D:\website\assets\hero-marine-valves.png`
+- 首页横幅图片：`D:\website\assets\hero-products.jpg`
 - 公司图形标：`D:\website\assets\logo-jiyuan-mark.svg`
 - 公司横版标：`D:\website\assets\logo-jiyuan-horizontal.svg`
 - 深色背景横版标：`D:\website\assets\logo-jiyuan-horizontal-light.svg`
+- 产品册下载文件：`D:\website\assets\jiyuan-product-catalog.pdf`
+- 产品单品图片：`D:\website\assets\products`
+- 详细目录概览页：`D:\website\catalog-overview.html`
 - 公司标预览：`D:\website\logo-preview.html`
 
 ## 修改公司信息
@@ -35,9 +38,16 @@ phones: ["13914400275"]
 - `summary`：产品简介
 - `scene`：适用场景
 - `service`：服务方式
+- `image`：产品图片路径
 - `features`：产品要点列表
 
 复制已有产品块即可新增产品，删除对应产品块即可移除产品。
+
+产品卡片图片来自产品册裁图。现在每个产品都是单独条目，点击产品卡片会弹出详情。
+
+如果要替换单品图片，把新图片放入 `D:\website\assets\products`，再把对应产品的 `image` 路径改成新文件名。
+
+如果要改产品详情，打开 `D:\website\js\site-data.js`，修改对应产品行里的产品名称、分类、适用场景或服务方式。
 
 ## 后续上线
 

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="泰州市吉远船用附件有限公司主营船用附件、船用阀门、通用机械制造与销售。联系人：王俊，电话：13914400275。"
+      content="泰州市吉远船用附件有限公司主营青铜阀门、铸钢阀门、铸铁阀门、不锈钢阀门、蝶阀、阀组及船用附件。联系人：王俊，电话：13914400275。"
     />
     <title>泰州市吉远船用附件有限公司 - 船用附件与船用阀门制造</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo-jiyuan-mark.svg" />
-    <link rel="preload" href="assets/hero-marine-valves.png" as="image" />
+    <link rel="preload" href="assets/hero-products.jpg" as="image" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -18,9 +18,9 @@
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="主导航">
         <a class="brand" href="#home" aria-label="返回首页">
-          <img class="brand-logo" src="assets/logo-jiyuan-mark.svg" alt="吉远船用附件标志" />
+          <img class="brand-logo" src="assets/logo-jiyuan-mark.svg" alt="吉远船阀标志" />
           <span class="brand-text">
-            <strong data-site-short-name>吉远船用附件</strong>
+            <strong data-site-short-name>吉远船阀</strong>
             <small>Marine Accessories</small>
           </span>
         </a>
@@ -47,13 +47,13 @@
 
     <main id="main">
       <section class="hero" id="home" aria-label="公司首页">
-        <img class="hero-image" src="assets/hero-marine-valves.png" alt="船用阀门和船用附件制造场景" />
+        <img class="hero-image" src="assets/hero-products.jpg" alt="吉远船阀船用阀门和船用附件产品展示" />
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow" data-company-tagline>船用附件 · 船用阀门 · 通用机械制造</p>
           <h1 data-company-name>泰州市吉远船用附件有限公司</h1>
           <p class="hero-summary" data-company-summary>
-            专注船用附件、船用阀门、通用机械制造与销售，为船舶配套、机械制造及运输设备相关场景提供可靠产品。
+            专注船用阀门与船用附件配套，产品覆盖青铜阀门、铸钢阀门、铸铁阀门、不锈钢阀门、蝶阀、阀组、船用滤器及管路附件。
           </p>
           <div class="hero-actions" aria-label="快速操作">
             <a class="button button-primary" href="#products">查看产品目录</a>
@@ -93,10 +93,10 @@
         <div class="about-layout">
           <div class="about-copy">
             <p data-about-text>
-              泰州市吉远船用附件有限公司成立于2014年03月10日，注册地位于泰州市海陵区苏陈镇西石羊村十三组。经营范围包括船用附件、船用阀门、通用机械制造、销售。
+              泰州市吉远船用附件有限公司位于江苏泰州，长期面向船舶配套、船舶维修、机舱管路和通用机械制造场景，提供船用阀门、船用附件及相关机械产品。公司以产品适配、规格确认和稳定交付为服务重点，支持客户按产品册、图纸、样品或现场工况进行选型沟通。
             </p>
             <p data-about-extra>
-              一般项目：其他通用仪器制造；运输设备及生产用计数仪表制造（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）。
+              产品方向涵盖青铜、铸钢、铸铁、不锈钢等材质阀门，以及蝶阀、阀组、滤器、膨胀节、空气帽、法兰、吸入口、泥箱、消防接头等船用附件。客户可提供使用介质、公称通径、压力等级、连接方式和数量，便于快速确认规格与报价。
             </p>
           </div>
           <div class="about-panel" aria-label="企业信息">
@@ -134,25 +134,25 @@
           </div>
           <div class="filter-tabs" role="tablist" aria-label="产品分类" data-product-filters></div>
         </div>
+        <div class="product-toolbar">
+          <p data-product-result-count>正在加载产品...</p>
+          <button class="text-button" type="button" data-clear-product-search>清空筛选</button>
+        </div>
+
+        <div class="catalog-download">
+          <div>
+            <h3>详细目录与规格参数</h3>
+            <p>首页展示单个产品。完整目录概览与产品册 PDF 已单独整理，便于选型、报价和规格沟通。</p>
+          </div>
+          <div class="catalog-actions">
+            <a class="button button-secondary" href="catalog-overview.html">查看详细目录概览</a>
+            <a class="button button-primary" href="assets/jiyuan-product-catalog.pdf" target="_blank" rel="noopener">打开产品册 PDF</a>
+            <a class="button button-ghost" href="assets/jiyuan-product-catalog.pdf" download>下载备用</a>
+          </div>
+        </div>
 
         <div class="product-grid" data-product-grid></div>
-
-        <div class="catalog-table-wrap">
-          <table class="catalog-table">
-            <caption>
-              主要产品目录概览
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col">产品类别</th>
-                <th scope="col">产品方向</th>
-                <th scope="col">适用场景</th>
-                <th scope="col">服务方式</th>
-              </tr>
-            </thead>
-            <tbody data-product-table></tbody>
-          </table>
-        </div>
+        <p class="no-results" hidden data-product-empty>没有找到匹配产品，可以换一个关键词或直接电话咨询。</p>
       </section>
 
       <section class="section capability-section" id="capability">
@@ -168,8 +168,8 @@
           </article>
           <article>
             <span>02</span>
-            <h3>稳定供货</h3>
-            <p>面向船舶配套、维修替换、机械制造等需求，提供清晰的产品确认与交付沟通。</p>
+            <h3>规格配套</h3>
+            <p>产品册覆盖多类船用阀门及附件，公称通径、压力等级、连接形式可结合实际工况确认。</p>
           </article>
           <article>
             <span>03</span>
@@ -209,13 +209,44 @@
         <strong data-footer-company>泰州市吉远船用附件有限公司</strong>
         <p>船用附件、船用阀门、通用机械制造与销售</p>
       </div>
-      <p>© <span data-year></span> <span data-footer-short>吉远船用附件</span>. All rights reserved.</p>
+      <p>© <span data-year></span> <span data-footer-short>吉远船阀</span>. All rights reserved.</p>
     </footer>
 
     <a class="floating-call" href="tel:13914400275" aria-label="拨打联系电话 13914400275" data-floating-phone>
       <span>联系电话</span>
       <strong>13914400275</strong>
     </a>
+
+    <div class="product-modal" hidden data-product-modal>
+      <div class="product-modal-backdrop" data-close-product></div>
+      <section class="product-dialog" role="dialog" aria-modal="true" aria-labelledby="product-dialog-title">
+        <button class="modal-close" type="button" aria-label="关闭产品详情" data-close-product>×</button>
+        <div class="product-dialog-media">
+          <img src="" alt="" data-modal-image />
+        </div>
+        <div class="product-dialog-body">
+          <p class="product-category" data-modal-category></p>
+          <h2 id="product-dialog-title" data-modal-title></h2>
+          <p data-modal-summary></p>
+          <dl class="product-detail-list">
+            <div>
+              <dt>适用场景</dt>
+              <dd data-modal-scene></dd>
+            </div>
+            <div>
+              <dt>服务方式</dt>
+              <dd data-modal-service></dd>
+            </div>
+          </dl>
+          <ul data-modal-features></ul>
+          <p class="product-detail-note" data-modal-detail></p>
+          <div class="modal-actions">
+            <a class="button button-primary" href="#contact" data-close-product>联系咨询</a>
+            <a class="button button-ghost" href="assets/jiyuan-product-catalog.pdf" target="_blank" rel="noopener">查看产品册</a>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <script src="js/site-data.js"></script>
     <script src="js/main.js"></script>
