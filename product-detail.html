@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="吉远船阀产品详情，船用阀门、船用附件、船用滤器及管路附件选型咨询。" />
+    <title>产品详情 - 泰州市吉远船用附件有限公司</title>
+    <link rel="stylesheet" href="css/styles.css?v=20260607-detail" />
+  </head>
+  <body class="detail-page">
+    <header class="detail-header">
+      <a class="brand" href="index.html#home" aria-label="返回首页">
+        <img src="assets/logo-jiyuan-mark.svg" alt="" />
+        <span class="brand-text">
+          <strong>吉远船阀</strong>
+          <small>船用附件与船用阀门</small>
+        </span>
+      </a>
+      <nav class="detail-nav" aria-label="详情页导航">
+        <a href="index.html#products">产品目录</a>
+        <a href="catalog-overview.html">目录概览</a>
+        <a href="index.html#contact">联系咨询</a>
+      </nav>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-shell" data-detail-shell>
+        <div class="detail-media">
+          <img src="" alt="" data-detail-image />
+        </div>
+        <article class="detail-content">
+          <p class="product-category" data-detail-category></p>
+          <h1 data-detail-title>产品详情</h1>
+          <p class="detail-summary" data-detail-summary></p>
+
+          <dl class="product-detail-list">
+            <div>
+              <dt>适用场景</dt>
+              <dd data-detail-scene></dd>
+            </div>
+            <div>
+              <dt>服务方式</dt>
+              <dd data-detail-service></dd>
+            </div>
+          </dl>
+
+          <div class="detail-block">
+            <h2>产品特点</h2>
+            <ul data-detail-features></ul>
+          </div>
+
+          <div class="detail-block">
+            <h2>选型说明</h2>
+            <p data-detail-note></p>
+          </div>
+
+          <div class="detail-actions">
+            <a class="button button-primary" href="tel:13914400275" data-detail-phone>电话咨询：13914400275</a>
+            <a class="button button-secondary" href="index.html#products">返回产品目录</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="js/site-data.js?v=20260607-detail"></script>
+    <script>
+      (function () {
+        const data = window.SITE_DATA || {};
+        const products = data.products || [];
+        const company = data.company || {};
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("id");
+        const product = products.find((item) => item.id === productId) || products[0];
+
+        const setText = (selector, value) => {
+          const node = document.querySelector(selector);
+          if (node) node.textContent = value || "";
+        };
+
+        if (!product) {
+          setText("[data-detail-title]", "未找到产品");
+          setText("[data-detail-summary]", "请返回产品目录重新选择，或直接电话联系确认产品。");
+          return;
+        }
+
+        document.title = `${product.title} - 产品详情 - ${company.name || "吉远船阀"}`;
+        const image = document.querySelector("[data-detail-image]");
+        if (image) {
+          image.src = product.image || "";
+          image.alt = product.title ? `${product.title}产品图` : "产品图";
+        }
+
+        setText("[data-detail-category]", product.category);
+        setText("[data-detail-title]", product.title);
+        setText("[data-detail-summary]", product.summary);
+        setText("[data-detail-scene]", product.scene);
+        setText("[data-detail-service]", product.service);
+        setText("[data-detail-note]", product.detail);
+
+        const list = document.querySelector("[data-detail-features]");
+        if (list) {
+          list.replaceChildren(
+            ...(product.features || []).map((feature) => {
+              const item = document.createElement("li");
+              item.textContent = feature;
+              return item;
+            })
+          );
+        }
+
+        const phone = company.phones && company.phones[0] ? company.phones[0] : "13914400275";
+        const phoneLink = document.querySelector("[data-detail-phone]");
+        if (phoneLink) {
+          phoneLink.href = `tel:${phone}`;
+          phoneLink.textContent = `电话咨询：${phone}`;
+        }
+      })();
+    </script>
+  </body>
+</html>
