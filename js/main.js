@@ -57,7 +57,7 @@
     card.dataset.search = `${product.title} ${product.category} ${product.summary} ${product.scene} ${product.service} ${(product.features || []).join(" ")}`;
     card.tabIndex = 0;
     card.setAttribute("role", "button");
-    card.setAttribute("aria-label", `查看${product.title}详情`);
+    card.setAttribute("aria-label", `打开${product.title}详情页`);
 
     const visual = document.createElement("div");
     visual.className = "product-visual";
@@ -93,8 +93,12 @@
       list.appendChild(item);
     });
 
-    const action = document.createElement("strong");
+    const action = document.createElement("a");
     action.className = "product-card-action";
+    action.href = productDetailUrl(product.id);
+    action.target = "_blank";
+    action.rel = "noopener";
+    action.setAttribute("aria-label", `查看${product.title}详情`);
     action.textContent = "查看详情";
 
     body.append(category, title, summary, list);
@@ -102,15 +106,33 @@
     return card;
   }
 
+  function productDetailUrl(productId) {
+    return `product-detail.html?id=${encodeURIComponent(productId)}`;
+  }
+
   function createTableRow(product) {
     const tr = document.createElement("tr");
     tr.dataset.category = product.category;
     tr.dataset.search = `${product.title} ${product.category} ${product.summary} ${product.scene} ${product.service} ${(product.features || []).join(" ")}`;
-    [product.category, product.title, product.scene, product.service].forEach((value) => {
-      const td = document.createElement("td");
-      td.textContent = value || "";
-      tr.appendChild(td);
-    });
+
+    const category = document.createElement("td");
+    category.textContent = product.category || "";
+
+    const title = document.createElement("td");
+    const link = document.createElement("a");
+    link.href = productDetailUrl(product.id);
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = product.title || "";
+    title.appendChild(link);
+
+    const scene = document.createElement("td");
+    scene.textContent = product.scene || "";
+
+    const service = document.createElement("td");
+    service.textContent = product.service || "";
+
+    tr.append(category, title, scene, service);
     return tr;
   }
 
@@ -250,16 +272,17 @@
     });
     $("[data-print-catalog]")?.addEventListener("click", () => window.print());
     $("[data-product-grid]")?.addEventListener("click", (event) => {
+      if (event.target.closest("a")) return;
       const card = event.target.closest("[data-product-id]");
       if (!card) return;
-      openProductModal(card.dataset.productId);
+      window.open(productDetailUrl(card.dataset.productId), "_blank", "noopener");
     });
     $("[data-product-grid]")?.addEventListener("keydown", (event) => {
       if (event.key !== "Enter" && event.key !== " ") return;
       const card = event.target.closest("[data-product-id]");
       if (!card) return;
       event.preventDefault();
-      openProductModal(card.dataset.productId);
+      window.open(productDetailUrl(card.dataset.productId), "_blank", "noopener");
     });
 
     $$("[data-close-product]").forEach((node) => {
